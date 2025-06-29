@@ -38,6 +38,7 @@ export const getAllCompanions = async ({ limit = 10, page = 1, subject, topic }:
 
     if(error) throw new Error(error.message);
 
+    console.log(companions);
     return companions;
 }
 
